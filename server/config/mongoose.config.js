@@ -1,6 +1,7 @@
+const mongoose = require("mongoose");
 mongoose
   .connect("mongodb://localhost/jokes_db", {
-    newUrlParser: true,
+    useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => console.log("Estas conectado a la base de datos"))
