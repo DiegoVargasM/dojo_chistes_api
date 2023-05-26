@@ -12,3 +12,6 @@ const JokeSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
+const Joke = mongoose.model("Joke", JokeSchema);
+module.exports = Joke;
